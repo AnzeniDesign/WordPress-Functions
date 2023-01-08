@@ -1,0 +1,5 @@
+function redirect_login() {
+    wp_redirect('https://yoursite.com/login/');
+    die;
+}
+add_action('login_redirect', 'redirect_login');
